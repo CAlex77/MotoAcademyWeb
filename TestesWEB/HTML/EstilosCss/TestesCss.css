@@ -1,0 +1,42 @@
+
+
+#Corpo{
+    background-color: rgb(34, 34, 61);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.formulario{
+    text-align: center; 
+    color: rgb(0, 0, 0); 
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+    background: #f0f0f0;
+}
+
+.pai{
+    margin: 150px;
+    background: green;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.filho{
+    width: 150px;
+    height: 150px;
+    top: 75px;
+    left: 75px;
+    border: 1px solid black;
+    position: relative;
+    background: blue;
+    
+}
