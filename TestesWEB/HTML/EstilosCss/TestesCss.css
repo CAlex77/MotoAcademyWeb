@@ -1,24 +1,9 @@
-
-
-#Corpo{
-    background-color: rgb(34, 34, 61);
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
-}
-
-
-.formulario{
-    text-align: center; 
-    color: rgb(0, 0, 0); 
-    font-size: 24px;
-    width: fit-content;
-    height: fit-content;
-    background: #f0f0f0;
+body{
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+    height: 180vh;
+    width: 240vh;
 }
 
 .pai{
@@ -40,3 +25,21 @@
     background: blue;
     
 }
+
+.paragrafo{
+    width: 600px;
+    margin: 20px;
+    color: black;
+    /* font-family: 'Open Sans', 'Montserrat', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 170%;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-decoration: line-through underline;
+    box-shadow: 10px 5px 5px black;
+    text-shadow: 6px 4px 2px rgb(71, 69, 69), 10px 4px 2px rgb(71, 132, 136); 
+}
+
+
+
