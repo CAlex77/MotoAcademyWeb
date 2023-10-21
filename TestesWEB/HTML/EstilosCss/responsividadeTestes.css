@@ -1,0 +1,21 @@
+
+@media screen and (max-width: 420px){
+    body{
+        background-color: lightblue;
+    }
+    
+}
+
+@media (width >= 421px) {
+    body{
+        background-color: lightpink;
+    }
+    
+}
+
+@media (width >= 768px){
+    body{
+        background-color: black;
+        color: white;
+    }
+}
