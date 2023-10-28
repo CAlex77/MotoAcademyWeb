@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="EstilosCss/bootstrapTestes.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5 mb-5 d-flex justify-content-center">
+      <div class="card px-1 py-4">
+        <div class="card-body">
+          <h6 class="card-title mb-3">Marcar Reserva</h6>
+          <div class="d-flex flex-row">
+            <label class="radio mr-1">
+              <input type="radio" name="add" value="" checked />
+              <span><i class="fa fa-user"></i> Eldorado </span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="add" value="" checked />
+              <span><i class="fa fa-plus-circle"></i> Outro </span>
+            </label>
+          </div>
+          <h6 class="information mt-4">Insira as informações</h6>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Nome" />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Telefone"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Email" />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column text-center px-5 mt-3 mb-3">
+            <small class="agree-text"
+              >Ao inserir os dados, você aceita os termos de uso</small
+            >
+            <a href="#" class="terms">Termos de uso</a>
+          </div>
+          <button class="btn btn-primary btn-block confirm-button">
+            Confirmar
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
