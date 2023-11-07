@@ -39,17 +39,140 @@
 
 // main();
 
-const euclido = 1;
+// const euclido = 1;
 
 
-function main(){
-    // if(euclido > 2){
-    //     console.log('TA ERRADO');
-    // }
-    // else if(euclido == 1){
-    //     console.log('TA CERTO');
-    // }
+// function main(){
+//     // if(euclido > 2){
+//     //     console.log('TA ERRADO');
+//     // }
+//     // else if(euclido == 1){
+//     //     console.log('TA CERTO');
+//     // }
 
-}
+// }
 
-main();
+// main();
+
+// function saudar(nome){
+//     console.log("Olá, " + nome + "!");
+// }
+
+// saudar("João");
+// saudar("Maria")
+
+// function vascoVaiVencerHoje(vitoria, valor1, valor2){
+//     console.log(vitoria, valor2);
+// }
+
+// vascoVaiVencerHoje('teste', 'teste2', 'teste3');
+
+// let array = [
+//     {
+//       id: 1,
+//       name: 'John',
+//       age: 23,
+//     },
+//     {
+//       id: 2,
+//       name: 'Samuel',
+//       age: 21,
+//     },
+//     {
+//       id: 3,
+//       name: 'marvin',
+//       age: 26,
+//     },
+//     {
+//       id: 4,
+//       name: 'james',
+//       age: 28,
+//     },
+//   ];
+
+//   function funcaoTeste(valor1){
+//     console.log(valor1.name);
+//     console.log(valor1.age);
+//     console.log(valor1.id);
+//     console.log(valor1?.sex);
+//   }
+
+//   funcaoTeste(array[0]);
+
+// function funcao(){
+//     console.log('Ola callback function');
+// }
+
+// function callbackFuncao(funcao){
+//     console.log('Ola mundo');
+// }
+
+// callbackFuncao(funcao());
+
+// const funcao =  (a, b) => {
+//     a;
+// };
+
+// console.log(funcao());
+
+// let array = [
+//     {
+//       id: 1,
+//       name: 'John',
+//       age: 23,
+//     },
+//     {
+//       id: 2,
+//       name: 'Samuel',
+//       age: 21,
+//     },
+//     {
+//       id: 3,
+//       name: 'marvin',
+//       age: 26,
+//     },
+//     {
+//       id: 4,
+//       name: 'james',
+//       age: 28,
+//     },
+//   ];
+
+// const teste = (a) => a + 10;
+
+// comsole.log(teste(10));
+
+// const calcularIdade = (anoNascimento) => 2023 - anoNascimento;
+// console.log(calcularIdade(2002));
+
+let array = [
+    {
+      id: 1,
+      name: 'John',
+      age: 23,
+    },
+    {
+      id: 2,
+      name: 'Samuel',
+      age: 21,
+    },
+    {
+      id: 3,
+      name: 'marvin',
+      age: 26,
+    },
+    {
+      id: 4,
+      name: 'james',
+      age: 28,
+    },
+  ];
+
+  const resultado = array.map((resposta) => {
+    console.log(resposta);
+    return '';
+  });
+
+
+
+
