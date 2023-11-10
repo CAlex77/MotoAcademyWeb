@@ -145,34 +145,103 @@
 // const calcularIdade = (anoNascimento) => 2023 - anoNascimento;
 // console.log(calcularIdade(2002));
 
-let array = [
-    {
-      id: 1,
-      name: 'John',
-      age: 23,
-    },
-    {
-      id: 2,
-      name: 'Samuel',
-      age: 21,
-    },
-    {
-      id: 3,
-      name: 'marvin',
-      age: 26,
-    },
-    {
-      id: 4,
-      name: 'james',
-      age: 28,
-    },
-  ];
+// let array = [
+//     {
+//       id: 1,
+//       name: 'John',
+//       age: 23,
+//     },
+//     {
+//       id: 2,
+//       name: 'Samuel',
+//       age: 21,
+//     },
+//     {
+//       id: 3,
+//       name: 'marvin',
+//       age: 26,
+//     },
+//     {
+//       id: 4,
+//       name: 'james',
+//       age: 28,
+//     },
+//   ];
 
-  const resultado = array.map((resposta) => {
-    console.log(resposta);
-    return '';
-  });
+//   const resultado = array.map((resposta) => {
+//     console.log(resposta);
+//     return '';
+//   });
+
+// let funcionario = [
+//   {
+//     nome: 'Euclides',
+//     idade: 21,
+//     cargo: ['Analista de sistemas'],
+//     tecnoglogia: ['Node'],
+//   },
+//   {
+//     nome: 'Linton',
+//     idade: 30,
+//     cargo: 'Analista de sistemas',
+//     tecnoglogia: 'Tudo',
+//   },
+//   {
+//     nome: 'Livia',
+//     idade: 20,
+//     cargo: 'Estagiaria',
+//     tecnoglogia: 'Android',
+//   },
+// ];
 
 
+// funcionario.push({
+//   nome:'Carlos',
+//   idade:21,
+//   cargo:'Desenvolvedor Web',
+//   tecnoglogia:'Angular',
+// });
 
+// console.log(funcionario[3]);
+
+// funcionario.map((resposta) => {
+//   if(resposta.nome === 'Livia'){
+//     console.log(resposta);
+//   }
+// });
+
+// console.log(funcionario[0].tecnoglogia)
+
+let funcionario = [
+  {
+    nome: 'Euclides',
+    idade: 21,
+    cargo: ['Analista de sistemas'],
+    tecnoglogia: 'Node',
+  },
+  {
+    nome: 'Linton',
+    idade: 30,
+    cargo: 'Analista de sistemas',
+    tecnoglogia: 'Tudo',
+  },
+  {
+    nome: 'Livia',
+    idade: 20,
+    cargo: 'Estagiaria',
+    tecnoglogia: 'Android',
+  },
+];
+
+function transformarEmArray(index){
+  funcionario[index].tecnoglogia = [];
+  funcionario[index].cargo = [];
+}
+
+transformarEmArray(0);
+
+funcionario[0].tecnoglogia.push('Node','Android',);
+funcionario[0].cargo.push('Professor','Analista');
+
+console.log(funcionario[0])
 
