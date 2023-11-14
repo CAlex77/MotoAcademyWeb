@@ -1,0 +1,17 @@
+<section *ngFor="let aluno of alunos">
+    <div *ngIf="aluno.nome != 'Tiago'" class="componente-nome">
+        Nome: {{aluno.nome}}
+    </div>
+    <div *ngIf="aluno.idade>18">
+        Idade: {{aluno.idade}}
+    </div>
+    <div>
+        Trabalho: {{aluno.trabalho}}
+    </div>
+    <div>
+        Salario: <span class="salarioEstilo" >
+            R$ {{aluno.salario}}
+        </span> 
+    </div>
+    <br>
+</section>
