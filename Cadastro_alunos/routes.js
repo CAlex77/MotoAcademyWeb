@@ -15,6 +15,22 @@ router.get("/alunos", (req, res) => {
   });
 });
 
+//endpoint para ALUNO ESPECIFICO
+router.get("/alunos/:id", (req, res) => {
+  const { id } = req.params;
+
+  const query = `SELECT * FROM alunos WHERE id_aluno = ${id}`;
+  
+
+  db.query(query, (err, result) => {
+    if (err) {
+      res.status(500).send(`Erro ao checar aluno: ${JSON.stringify(err)}`);
+    } else {
+      res.json(result);
+    }
+  });
+});
+
 //endpoint de Criação de Aluno
 router.post("/alunos", (req, res) => {
   const { nome, idade } = req.body;
@@ -91,12 +107,13 @@ router.get("/aulas", (req, res) => {
   });
 });
 
+
 //atualizar aulas
 router.put("/aulas/:id", (req, res) => {
   const { id } = req.params;
   const { nome_aula, descricao } = req.body;
 
-  const query = `UPDATE aulas SET nome_aula='${nome_aula}', descricao=${descricao} WHERE id_aula=${id}`;
+  const query = `UPDATE aulas SET nome_aula='${nome_aula}', descricao='${descricao}' WHERE id_aula=${id}`;
 
   db.query(query, (err, result) => {
     if (err) {
